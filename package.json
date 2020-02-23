@@ -5,7 +5,8 @@
   "typings": "dist/main.d.ts",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "src",
   ],
   "scripts": {
     "build": "tsc",
