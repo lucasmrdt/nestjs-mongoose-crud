@@ -6,7 +6,7 @@
   "license": "MIT",
   "files": [
     "dist",
-    "src",
+    "src"
   ],
   "scripts": {
     "build": "tsc",
