@@ -4,6 +4,9 @@
   "main": "dist/main.js",
   "typings": "dist/main.d.ts",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "serve": "tsc --watch"
