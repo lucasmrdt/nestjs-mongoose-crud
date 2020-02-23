@@ -86,7 +86,7 @@ export class CrudController {
     return this.model.create(body)
   }
 
-  @Put(':id')
+  @Post(':id/update')
   @ApiOperation({ summary: 'Update a record' })
   update(@Param('id') id: string, @Body() body: CrudPlaceholderDto) {
     const transform = get(this.crudOptions, 'routes.update.transform')
@@ -100,7 +100,7 @@ export class CrudController {
     })
   }
 
-  @Delete(':id')
+  @Post(':id/delete')
   @ApiOperation({ summary: 'Delete a record' })
   delete(@Param('id') id: string) {
     return this.model.findOneAndRemove({ _id: id })
